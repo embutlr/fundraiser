@@ -32,7 +32,7 @@
 /* GLOBAL SPACING */
 
 section {
-  padding: 70px 24px;
+  padding: 10px 24px;
   max-width: 900px;
   margin: 0 auto;
 }
@@ -865,7 +865,7 @@ section {
 
 <div class="progress-wrap">
   <div class="progress-labels">
-    <span>$1465 raised</span>
+    <span>$1,515 raised raised</span>
     <span>Goal: $6,000</span>
   </div>
 
@@ -873,7 +873,7 @@ section {
     <div class="progress-bar-fill" id="progressFill"></div>
   </div>
 
-<div class="progress-note"> Thank you to everyone who has donated! Only $35 away from 25% 😭💗 </div>
+<div class="progress-note"> 25% of the goal reached — thank you all for the incredible support 💗 </div>
 </div>
  </div>
 
@@ -884,6 +884,13 @@ section {
   <div class="section-label">Supporters</div>
 
   <div class="donor-feed">
+
+   <div class="donation">
+  <div class="donation-top">
+    <span class="donor-name">Ariane Beras-Gonzalez</span>
+    <span class="donor-amount">$50</span>
+  </div>
+</div>
 
    <div class="donation">
   <div class="donation-top">
@@ -1084,7 +1091,7 @@ section {
         // Animate progress bar when donate section visible
         if (e.target.classList.contains('donate-section')) {
           setTimeout(() => {
-            document.getElementById('progressFill').style.width = '24%';
+            document.getElementById('progressFill').style.width = '25%';
           }, 300);
         }
       }
