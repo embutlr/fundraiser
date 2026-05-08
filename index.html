@@ -390,7 +390,7 @@ section + section {
 /* ── DONOR FEED ── */
 
 .donor-feed {
-  max-width: 640px;
+  max-width: 620px;
   margin: 0 auto;
 }
 
@@ -400,32 +400,38 @@ section + section {
   border-radius: 10px;
   padding: 10px 14px;
   margin-bottom: 8px;
+  transition: all 0.2s ease;
+}
+
+.donation:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.06);
 }
 
 .donation-top {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 4px;
+  margin-bottom: 3px;
 }
 
 .donor-name {
-  font-weight: 600;
   font-size: 14px;
+  font-weight: 600;
   color: #222;
 }
 
 .donor-amount {
-  font-weight: 600;
   font-size: 14px;
+  font-weight: 600;
   color: var(--rose);
 }
 
 .donor-message {
   font-size: 13px;
+  line-height: 1.35;
   color: #555;
   margin: 0;
-  line-height: 1.3;
 }
 
 /* subtle hover effect */
@@ -648,8 +654,6 @@ section + section {
     max-width: 960px;
     padding: 40px 24px;
   }
-<p style="background:red;color:white;">GALLERY START</p>
-    }
     
   .gallery-grid {
     display: grid;
@@ -856,7 +860,6 @@ section + section {
     </div>
  
 <!-- DONATE -->
-  <p style="background:blue;color:white;">DONATE START</p>
 <div class="donate-section reveal">
   <div class="section-label" style="justify-content: center; max-width: 720px; margin: 0 auto 20px;">
     <span>Make a difference</span>
