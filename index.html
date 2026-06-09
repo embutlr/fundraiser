@@ -887,7 +887,7 @@ section + section {
 <!-- COUNTDOWN -->
 <section class="countdown-section reveal">
   <div class="countdown-box">
-    <div class="countdown-number">145</div>
+    <div class="countdown-number" id="countdownDays"></div>
     <div class="countdown-label">Days Until NYC Marathon</div>
   </div>
 </section>
@@ -1231,6 +1231,19 @@ section + section {
   document.getElementById('lightbox').addEventListener('click', function(e) {
     if (e.target === this) closeLightbox();
   });
+</script>
+  <script>
+const raceDate = new Date("2026-11-01");
+
+function updateCountdown() {
+  const today = new Date();
+  const diff = raceDate - today;
+  const days = Math.ceil(diff / (1000 * 60 * 60 * 24));
+
+  document.getElementById("countdownDays").textContent = days;
+}
+
+updateCountdown();
 </script>
 </body>
 </html>
