@@ -475,6 +475,34 @@ section + section {
     color: var(--ink-soft);
     margin-top: 10px;
   }
+    /* COUNTDOWN TIMER */
+    .countdown-section {
+  text-align: center;
+  padding: 20px 24px 40px;
+}
+
+.countdown-box {
+  display: inline-block;
+  background: white;
+  border: 1px solid #eee;
+  border-radius: 16px;
+  padding: 24px 40px;
+}
+
+.countdown-number {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 64px;
+  line-height: 1;
+  color: var(--rose);
+}
+
+.countdown-label {
+  margin-top: 8px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #777;
+}
 
   /* ── FOOTER ── */
   footer {
@@ -855,6 +883,16 @@ section + section {
 </section>
 
     </div>
+
+<!-- COUNTDOWN -->
+<section class="countdown-section reveal">
+  <div class="countdown-box">
+    <div class="countdown-number">145</div>
+    <div class="countdown-label">Days Until NYC Marathon</div>
+  </div>
+</section>
+
+      </div>
  
 <!-- DONATE -->
 <div class="donate-section reveal">
@@ -876,7 +914,7 @@ section + section {
 
 <div class="progress-wrap">
   <div class="progress-labels">
-    <span>$1,675 raised raised</span>
+    <span>$1,750 raised </span>
     <span>Goal: $6,000</span>
   </div>
 
@@ -884,7 +922,7 @@ section + section {
     <div class="progress-bar-fill" id="progressFill"></div>
   </div>
 
-<div class="progress-note">28% of the goal reached — thank you for the incredible support 💗</div>
+<div class="progress-note">29% of the goal reached — thank you for the incredible support 💗</div>
 </div>
  </div>
 
@@ -897,6 +935,21 @@ section + section {
     <div class="donor-feed">
 
 <div class="donation">
+  <div class="donation-top">
+    <span class="donor-name">Mona Shukri</span>
+    <span class="donor-amount">$50</span>
+  </div>
+  <p class="donor-message">Emily…. I have never met you or Joy, but the love I have for all of you as a result of loving Suebee and hearing all about her beautiful sister and beautiful nieces…. I’m sure Joy is smiling down at you and so proud of what you are doing! Keep up the amazing work 💪🏼🙏</p>
+</div>
+
+<div class="donation">
+  <div class="donation-top">
+    <span class="donor-name">Marie Caceres</span>
+    <span class="donor-amount">$25</span>
+  </div>
+  <p class="donor-message">I remember Joy being a ray of sunshine to you and the family. Wishing you all the luck on your run! You go cuz!</p>
+</div>
+      <div class="donation">
   <div class="donation-top">
     <span class="donor-name">Jess Wong</span>
     <span class="donor-amount">$25</span>
@@ -1138,7 +1191,7 @@ section + section {
         // Animate progress bar when donate section visible
         if (e.target.classList.contains('donate-section')) {
           setTimeout(() => {
-            document.getElementById('progressFill').style.width = '28%';
+            document.getElementById('progressFill').style.width = '29.2%';
           }, 300);
         }
       }
